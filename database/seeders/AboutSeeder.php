@@ -23,7 +23,7 @@ class AboutSeeder extends Seeder
                 "website" => "www.hndrckx.be",
                 "phone" => "0479/98.01.36",
                 "city" => "Brussels",
-                "age" => "27",
+                "age" => 27,
                 "degree" => "Bachelor",
                 "email" => "hndrckx@mail.com",
                 "freelance" => "None",
