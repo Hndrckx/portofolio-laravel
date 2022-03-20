@@ -26,7 +26,7 @@ class AboutController extends Controller
         $update->freelance = $request->freelance;
         $update->conclusion = $request->conclusion;
         $update->save();
-        return redirect ('/');
+        return redirect ('/admin/all');
     }
 }
 
