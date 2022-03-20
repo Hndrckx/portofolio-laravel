@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/admin/all', [AdminController::class, 'index']);
+
+Route::get('/admin/{id}/about/edit', [AboutController::class, 'edit']);
+Route::put('/admin/{id}/about/update', [AboutController::class,'update']);
+
+
+
