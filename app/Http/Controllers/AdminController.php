@@ -14,11 +14,11 @@ class AdminController extends Controller
 {
     public function index(){
         $about = About::first();
-        $skill = Skill::all();
-        $portofolio = Portofolio::all();
-        $service = Service::all();
-        $testimonial = Testimonial::all();
+        $skills = Skill::all();
+        $portofolios = Portofolio::all();
+        $services = Service::all();
+        $testimonials = Testimonial::all();
         $contact = Contact::first();
-        return view('pages.allAdmin', compact('about','skill', 'portofolio', 'service', 'testimonial', 'contact'));
+        return view('pages.allAdmin', compact('about','skills', 'portofolios', 'services', 'testimonials', 'contact'));
     }
 }
