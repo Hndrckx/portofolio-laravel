@@ -15,8 +15,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(
+                [
                 AboutSeeder::class,
                 SkillSeeder::class,
+                PortofolioSeeder::class,
+                ]
             );
     }
 }

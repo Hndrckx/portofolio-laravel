@@ -3,6 +3,7 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\SkillController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PortofolioController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,3 +28,7 @@ Route::put('/admin/{id}/about/update', [AboutController::class,'update']);
 
 Route::get('/admin/{id}/skill/create', [SkillController::class, 'create'])->name('create');
 Route::post('/admin/{id}/skill/store', [SkillController::class, 'store']);
+
+Route::get('/admin/{id}/pf/create', [PortofolioController::class, 'create'])->name('create');
+Route::post('/admin/{id}/pf/store', [PortofolioController::class, 'store']);
+Route::delete('/admin/{id}/delete', [PortofolioController::class, 'destroy']);
