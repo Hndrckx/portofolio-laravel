@@ -21,9 +21,9 @@
                             risus at semper.
                             <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                         </p>
-                        <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                        <img src="{{asset("img/testimonials/testimonials-1.jpg")}}" class="testimonial-img" alt="">
                         <h3>Saul Goodman</h3>
-                        <h4>Ceo &amp; Founder</h4>
+                        <h4>Ceo Founder</h4>
                     </div>
                 </div><!-- End testimonial item -->
 
@@ -81,7 +81,7 @@
                             culpa fore nisi cillum quid.
                             <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                         </p>
-                        <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                        <img src="{{asset("img/testimonials/testimonials-5.jpg")}}" class="testimonial-img" alt="">
                         <h3>John Larson</h3>
                         <h4>Entrepreneur</h4>
                     </div>

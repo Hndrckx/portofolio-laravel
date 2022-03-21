@@ -4,6 +4,8 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\SkillController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PortofolioController;
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\TestimonialController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,3 +39,7 @@ Route::delete('/admin/{id}/pf/delete', [PortofolioController::class, 'destroy'])
 Route::get('/admin/{id}/service/create', [ServiceController::class, 'create'])->name('create');
 Route::post('/admin/{id}/service/store', [ServiceController::class, 'store']);
 Route::delete('/admin/{id}/service/delete', [ServiceController::class, 'destroy']);
+
+Route::get('/admin/{id}/testi/create', [TestimonialController::class, 'create'])->name('create');
+Route::post('/admin/{id}/testi/store', [TestimonialController::class, 'store']);
+Route::delete('/admin/{id}/testi/delete', [TestimonialController::class, 'destroy']);
