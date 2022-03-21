@@ -15,7 +15,7 @@ class PortofolioSeeder extends Seeder
      */
     public function run()
     {
-        DB::tables('portofolios')->insert([
+        DB::table('portofolios')->insert([
             [
                 "imgLink" => "img/portfolio/portfolio-1.jpg"
             ],

@@ -20,8 +20,8 @@ class PortofolioController extends Controller
     }
 
     public function destroy($id){
-        $delete = Portofolio::find($id);
-        $delete->delete();
+        $deleteTwo = Portofolio::find($id);
+        $deleteTwo->delete();
         return redirect('/admin/all');
     }
 }

@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
                 AboutSeeder::class,
                 SkillSeeder::class,
                 PortofolioSeeder::class,
+                ServiceSeeder::class,
                 ]
             );
     }

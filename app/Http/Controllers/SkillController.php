@@ -20,4 +20,10 @@ class SkillController extends Controller
         $store->save();
         return redirect("/admin/all");
     }
+
+    public function destroy($id){
+        $delete = Skill::find($id);
+        $delete->delete();
+        return redirect('/admin/all');
+    }
 }

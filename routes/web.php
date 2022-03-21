@@ -28,7 +28,12 @@ Route::put('/admin/{id}/about/update', [AboutController::class,'update']);
 
 Route::get('/admin/{id}/skill/create', [SkillController::class, 'create'])->name('create');
 Route::post('/admin/{id}/skill/store', [SkillController::class, 'store']);
+Route::delete('/admin/{id}/skill/delete', [SkillController::class, 'destroy']);
 
 Route::get('/admin/{id}/pf/create', [PortofolioController::class, 'create'])->name('create');
 Route::post('/admin/{id}/pf/store', [PortofolioController::class, 'store']);
-Route::delete('/admin/{id}/delete', [PortofolioController::class, 'destroy']);
+Route::delete('/admin/{id}/pf/delete', [PortofolioController::class, 'destroy']);
+
+Route::get('/admin/{id}/service/create', [ServiceController::class, 'create'])->name('create');
+Route::post('/admin/{id}/service/store', [ServiceController::class, 'store']);
+Route::delete('/admin/{id}/service/delete', [ServiceController::class, 'destroy']);
