@@ -43,3 +43,6 @@ Route::delete('/admin/{id}/service/delete', [ServiceController::class, 'destroy'
 Route::get('/admin/{id}/testi/create', [TestimonialController::class, 'create'])->name('create');
 Route::post('/admin/{id}/testi/store', [TestimonialController::class, 'store']);
 Route::delete('/admin/{id}/testi/delete', [TestimonialController::class, 'destroy']);
+
+Route::get('/admin/{id}/contact/edit', [ContactController::class, 'edit']);
+Route::put('/admin/{id}/contact/update', [ContactController::class,'update']);

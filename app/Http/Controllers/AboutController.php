@@ -9,7 +9,7 @@ class AboutController extends Controller
 {
     public function edit ($id){
         $edit = About::find($id);
-        return view ('pages.adminAbout', compact('edit'));
+        return view('pages.adminAbout', compact('edit'));
     }
 
     public function update($id, Request $request){

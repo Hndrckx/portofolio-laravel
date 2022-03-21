@@ -7,6 +7,7 @@ use App\Models\Portofolio;
 use App\Models\Service;
 use App\Models\Skill;
 use App\Models\Testimonial;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -17,6 +18,7 @@ class AdminController extends Controller
         $portofolio = Portofolio::all();
         $service = Service::all();
         $testimonial = Testimonial::all();
-        return view('pages.allAdmin', compact('about','skill', 'portofolio', 'service'));
+        $contact = Contact::first();
+        return view('pages.allAdmin', compact('about','skill', 'portofolio', 'service', 'testimonial', 'contact'));
     }
 }
