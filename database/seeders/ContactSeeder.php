@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class ContactSeeder extends Seeder
 {
@@ -14,6 +15,12 @@ class ContactSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('contacts')->insert([
+            [
+                "contactLocation" => "Chaussée de Waterloo 923",
+                "contactEmail" => "hendrickx.anthony@outlook.fr",
+                "contactPhone" => "0479/98.01.36",
+            ]
+        ]);
     }
 }

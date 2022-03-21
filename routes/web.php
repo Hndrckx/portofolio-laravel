@@ -28,20 +28,20 @@ Route::get('/admin/all', [AdminController::class, 'index']);
 Route::get('/admin/{id}/about/edit', [AboutController::class, 'edit']);
 Route::put('/admin/{id}/about/update', [AboutController::class,'update']);
 
-Route::get('/admin/{id}/skill/create', [SkillController::class, 'create'])->name('create');
-Route::post('/admin/{id}/skill/store', [SkillController::class, 'store']);
+Route::get('/admin/skill/create', [SkillController::class, 'create'])->name('create');
+Route::post('/admin/skill/store', [SkillController::class, 'store']);
 Route::delete('/admin/{id}/skill/delete', [SkillController::class, 'destroy']);
 
-Route::get('/admin/{id}/pf/create', [PortofolioController::class, 'create'])->name('create');
-Route::post('/admin/{id}/pf/store', [PortofolioController::class, 'store']);
+Route::get('/admin/pf/create', [PortofolioController::class, 'create'])->name('create');
+Route::post('/admin/pf/store', [PortofolioController::class, 'store']);
 Route::delete('/admin/{id}/pf/delete', [PortofolioController::class, 'destroy']);
 
-Route::get('/admin/{id}/service/create', [ServiceController::class, 'create'])->name('create');
-Route::post('/admin/{id}/service/store', [ServiceController::class, 'store']);
+Route::get('/admin/service/create', [ServiceController::class, 'create'])->name('create');
+Route::post('/admin/service/store', [ServiceController::class, 'store']);
 Route::delete('/admin/{id}/service/delete', [ServiceController::class, 'destroy']);
 
-Route::get('/admin/{id}/testi/create', [TestimonialController::class, 'create'])->name('create');
-Route::post('/admin/{id}/testi/store', [TestimonialController::class, 'store']);
+Route::get('/admin/testi/create', [TestimonialController::class, 'create'])->name('create');
+Route::post('/admin/testi/store', [TestimonialController::class, 'store']);
 Route::delete('/admin/{id}/testi/delete', [TestimonialController::class, 'destroy']);
 
 Route::get('/admin/{id}/contact/edit', [ContactController::class, 'edit']);

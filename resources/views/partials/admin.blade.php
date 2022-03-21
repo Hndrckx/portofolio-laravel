@@ -115,7 +115,7 @@
     <h2>Contact</h2>
     <p>Location : {{ $contact->contactLocation }} </p>
     <p>Email : {{ $contact->contactEmail }} </p>
-    <p>Call : {{ $contact->contactLocation }} </p>
+    <p>Call : {{ $contact->contactPhone }} </p>
 
     <a href="/admin/{{ $contact->id }}/contact/edit" class="btn btn-primary">Edit</a>
 </div>
