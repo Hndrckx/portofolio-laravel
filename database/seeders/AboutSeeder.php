@@ -21,7 +21,7 @@ class AboutSeeder extends Seeder
                 "introduction" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                 "birthday" => "24 January 1995",
                 "website" => "www.hndrckx.be",
-                "phone" => "0479/98.01.36",
+                "phone" => "0479/79.79.79",
                 "city" => "Brussels",
                 "age" => 27,
                 "degree" => "Bachelor",
