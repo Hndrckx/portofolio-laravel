@@ -67,6 +67,7 @@
             @endforeach
         </tbody>
     </table>
+    <a href="/admin/skill/create" class="btn btn-primary mt-4 mb-4">Add new skill</a>
 </div>
 
 <div class="p-2 m-5">
