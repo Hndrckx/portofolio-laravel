@@ -77,6 +77,7 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Link</th>
+                <th scope="col">Filter</th>
                 <th scope="col">Button</th>
             </tr>
         </thead>
@@ -85,11 +86,13 @@
                 <tr>
                     <th scope="row">{{ $portofolio->id }}</th>
                     <td>{{ $portofolio->imgLink }}</td>
+                    <td>{{ $portofolio->imgType }}</td>
                     <td><a href="/admin/{{ $portofolio->id }}/pf/delete" class="btn btn-danger">Delete</a><td>
                 </tr>
             @endforeach
         </tbody>
     </table>
+    <a href="/admin/pf/create" class="btn btn-primary mt-4 mb-4">Add new image</a>
 </div>
 
 <div class="p-2 m-5">
@@ -116,6 +119,7 @@
             @endforeach
         </tbody>
     </table>
+    <a href="/admin/service/create" class="btn btn-primary mt-4 mb-4">Add new service</a>
 </div>
 
 <div class="p-2 m-5">
@@ -144,6 +148,7 @@
             @endforeach
         </tbody>
     </table>
+    <a href="/admin/testi/create" class="btn btn-primary mt-4 mb-4">Add new testimonial</a>
 </div>
 
 <div class="p-2 m-5">

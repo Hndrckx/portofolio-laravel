@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('portofolios', function (Blueprint $table) {
             $table->id();
             $table->string('imgLink');
+            $table->string('imgType');
             $table->timestamps();
         });
     }

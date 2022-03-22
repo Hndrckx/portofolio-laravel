@@ -6,6 +6,9 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PortofolioController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TestimonialController;
+use App\Http\Controllers\ContactController;
+use App\Models\About;
+use App\Models\Skill;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,7 +23,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $uiAbout = About::first();
+    $uiSkills = Skill::all();
+    return view('welcome', compact('uiAbout', 'uiSkills', ));
 });
 
 Route::get('/admin/all', [AdminController::class, 'index']);

@@ -17,39 +17,48 @@ class PortofolioSeeder extends Seeder
     {
         DB::table('portofolios')->insert([
             [
-                "imgLink" => "img/portfolio/portfolio-1.jpg"
+                "imgLink" => "img/portfolio/portfolio-1.jpg",
+                "imgType" => "filter-app",
             ],
 
             [
-                "imgLink" => "img/portfolio/portfolio-2.jpg"
+                "imgLink" => "img/portfolio/portfolio-2.jpg",
+                "imgType" => "filter-web",
             ],
 
             [
-                "imgLink" => "img/portfolio/portfolio-3.jpg"
+                "imgLink" => "img/portfolio/portfolio-3.jpg",
+                "imgType" => "filter-app",
             ],
 
             [
-                "imgLink" => "img/portfolio/portfolio-4.jpg"
+                "imgLink" => "img/portfolio/portfolio-4.jpg",
+                "imgType" => "filter-card",
             ],
 
             [
-                "imgLink" => "img/portfolio/portfolio-5.jpg"
+                "imgLink" => "img/portfolio/portfolio-5.jpg",
+                "imgType" => "filter-web",
             ],
 
             [
-                "imgLink" => "img/portfolio/portfolio-6.jpg"
+                "imgLink" => "img/portfolio/portfolio-6.jpg",
+                "imgType" => "filter-app",
             ],
 
             [
-                "imgLink" => "img/portfolio/portfolio-7.jpg"
+                "imgLink" => "img/portfolio/portfolio-7.jpg",
+                "imgType" => "filter-card",
             ],
 
             [
-                "imgLink" => "img/portfolio/portfolio-8.jpg"
+                "imgLink" => "img/portfolio/portfolio-8.jpg",
+                "imgType" => "filter-card",
             ],
 
             [
-                "imgLink" => "img/portfolio/portfolio-9.jpg"
+                "imgLink" => "img/portfolio/portfolio-9.jpg",
+                "imgType" => "filter-web",
             ],
         ]);
     }

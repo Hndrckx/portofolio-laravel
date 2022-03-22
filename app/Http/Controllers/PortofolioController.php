@@ -15,6 +15,7 @@ class PortofolioController extends Controller
     public function store(Request $request){
         $storeTwo = new Portofolio();
         $storeTwo->imgLink = $request->imgLink;
+        $storeTwo->imgType = $request->imgType;
         $storeTwo->save();
         return redirect("/admin/all");
     }

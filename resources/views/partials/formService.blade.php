@@ -21,19 +21,25 @@
     </div>
 </header><!-- End Header -->
 
-<h2 class="text-primary m-4">Portofolio</h2>
+<h2 class="text-primary m-4">Services</h2>
 <div class="m-4 p-3">
-    <form action="/admin/pf/store" method="POST">
+    <form action="/admin/service/store" method="POST">
         @csrf
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Link</label>
-            <input type="text" name="imgLink" class="form-control" placeholder="img/portfolio/">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <input type="text" name="serviceName" class="form-control">
         </div>
 
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Filter</label>
-            <input type="text" name="imgType" class="form-control">
+            <label for="exampleFormControlInput1" class="form-label">Text</label>
+            <input type="text" name="serviceText" class="form-control">
         </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Icon</label>
+            <input type="text" name="serviceIcon" class="form-control" placeholder="bi bi-">
+        </div>
+
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
