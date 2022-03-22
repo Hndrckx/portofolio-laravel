@@ -17,9 +17,9 @@ class ContactSeeder extends Seeder
     {
         DB::table('contacts')->insert([
             [
-                "contactLocation" => "Chaussée de Waterloo 923",
-                "contactEmail" => "hendrickx.anthony@outlook.fr",
-                "contactPhone" => "0479/98.01.36",
+                "contactLocation" => "Chaussée de Waterloo 923, 1180 Uccle",
+                "contactEmail" => "hndrckx@mail.com",
+                "contactPhone" => "0479/79.79.79",
             ]
         ]);
     }
