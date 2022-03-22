@@ -8,6 +8,8 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\ContactController;
 use App\Models\About;
+use App\Models\Portofolio;
+use App\Models\Service;
 use App\Models\Skill;
 use Illuminate\Support\Facades\Route;
 
@@ -25,7 +27,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $uiAbout = About::first();
     $uiSkills = Skill::all();
-    return view('welcome', compact('uiAbout', 'uiSkills', ));
+    $uiPortofolios = Portofolio::all();
+    $uiServices = Service::all();
+    return view('welcome', compact('uiAbout', 'uiSkills', 'uiPortofolios' ));
 });
 
 Route::get('/admin/all', [AdminController::class, 'index']);
